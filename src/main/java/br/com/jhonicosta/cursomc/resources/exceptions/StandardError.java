@@ -1,4 +1,4 @@
-package br.com.jhonicosta.cursomc.resources.excepsion;
+package br.com.jhonicosta.cursomc.resources.exceptions;
 
 import java.io.Serializable;
 
