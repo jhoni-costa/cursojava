@@ -34,7 +34,6 @@ public class ClienteService {
 		return repository.save(cliente);
 	}
 
-
 	public void delete(Integer id) {
 		find(id);
 		try {
