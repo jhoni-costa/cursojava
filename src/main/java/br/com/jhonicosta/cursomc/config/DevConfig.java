@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
 import br.com.jhonicosta.cursomc.services.DBService;
 
 @Configuration
-@Profile("test")
+@Profile("dev")
 public class DevConfig {
 
 	@Autowired
