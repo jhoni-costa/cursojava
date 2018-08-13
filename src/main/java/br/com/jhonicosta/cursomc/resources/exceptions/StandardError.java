@@ -2,27 +2,31 @@ package br.com.jhonicosta.cursomc.resources.exceptions;
 
 import java.io.Serializable;
 
-public class StandardError implements Serializable{
+public class StandardError implements Serializable {
 
 	private static final long serialVersionUID = 1l;
 
+	private Long timestamp;
 	private Integer status;
-	private String msg;
-	private Long timeStamp;
+	private String error;
+	private String messege;
+	private String path;
 
-	public StandardError(Integer status, String msg, Long timeStamp) {
+	public StandardError(Long timestamp, Integer status, String error, String messege, String path) {
 		super();
+		this.timestamp = timestamp;
 		this.status = status;
-		this.msg = msg;
-		this.timeStamp = timeStamp;
+		this.error = error;
+		this.messege = messege;
+		this.path = path;
 	}
 
-	public String getMsg() {
-		return msg;
+	public Long getTimestamp() {
+		return timestamp;
 	}
 
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setTimestamp(Long timestamp) {
+		this.timestamp = timestamp;
 	}
 
 	public Integer getStatus() {
@@ -33,12 +37,28 @@ public class StandardError implements Serializable{
 		this.status = status;
 	}
 
-	public Long getTimeStamp() {
-		return timeStamp;
+	public String getError() {
+		return error;
 	}
 
-	public void setTimeStamp(Long timeStamp) {
-		this.timeStamp = timeStamp;
+	public void setError(String error) {
+		this.error = error;
+	}
+
+	public String getMessege() {
+		return messege;
+	}
+
+	public void setMessege(String messege) {
+		this.messege = messege;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
 	}
 
 }
